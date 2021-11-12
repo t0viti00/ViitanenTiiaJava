@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjectApplication<project>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.lopputyo.project.ProjectApplication",
+            "projectName": "project",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CourseappApplication<project>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.lopputyo.project.CourseappApplication",
+            "projectName": "project",
+            "args": ""
+        }
+    ]
+}
