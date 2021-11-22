@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 public class CourseService {
     public List<Course> Courses = new ArrayList<>();
     public List<Student> Students = new ArrayList<>();
+    public List<OnlineCourse> online = new ArrayList<>();
+
 
 
     public CourseService(){
@@ -21,6 +23,9 @@ public class CourseService {
 
         Student p1 = new Student("Pelkonen Hanna");
         Students.add(p1);
+
+        OnlineCourse c1 = new OnlineCourse("Cloud Services", "Keijo Patanen", "www.moodle.oulu.fi");
+        online.add(c1);
        
 
     
@@ -62,6 +67,18 @@ public class CourseService {
         }
         return found;
 
+    }
+
+    public List<OnlineCourse> getOnlineCoursesByName(String onlinecourse){
+
+        List<OnlineCourse> found = new ArrayList<>();
+
+        for (OnlineCourse online : online) {
+            if(online.getOnlineCourse().equals(onlinecourse)){
+                found.add(online);
+            }
+        }
+        return found;
     }
 
     

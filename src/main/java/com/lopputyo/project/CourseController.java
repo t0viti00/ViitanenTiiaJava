@@ -23,6 +23,12 @@ public class CourseController {
         return CourseService.Courses;
     }
 
+    @GetMapping("OnlineCourses")
+    public List<OnlineCourse> getOnlineCourses(){
+        return CourseService.online;
+    }
+
+
     @GetMapping("Courses/{name}")
     public List<Course> getCustomerCourses(@PathVariable String name){
         return CourseService.getCoursesByName(name);
